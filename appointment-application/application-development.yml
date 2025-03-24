@@ -1,0 +1,21 @@
+
+prop1: "value1"
+prop2: "value2"
+user:
+  role: Developer from development profile
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  cloud:
+    consul:
+      discovery:
+        prefer-ip-address: true
+        register-health-check: true
+      host: localhost
+      port: 8500
+      config:
+        enabled: false
